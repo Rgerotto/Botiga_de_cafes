@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-green: #053617;
+    --color-red: rgb(255, 11, 7);
+    --color-white: rgb(255, 255, 255);
+    --color-black: rgb(0,0,0);
+}
+.text-h2, .text-h1{
+    font-family: "Dancing Script", cursive;
+    font-size: 35px;
+    font-weight: 200;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: "Lato", sans-serif;
+}
+/* HEADER */
+.header{
+}
+.text-h1{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 8vw;
+    padding-top: 50px;
+    padding-right: 30px;
+    color: var(--color-white);
+    text-shadow: .1rem .5rem .9rem black;
+    transform: rotate(-15deg);
+}
+.header-img{
+
+    width: 100%;
+}
+
+/* NAV */
+nav{
+    width: 100%;
+    height: 50px;
+    margin-top: -5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-green);
+}
+.list{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.list > a{
+    text-decoration: none;
+    color: var(--color-white);
+}
+.list > a:active{
+    text-decoration: none;
+    color: var(--color-white);
+}
+.list-li{
+    list-style: none;
+    border-top: 2px solid transparent;
+    transition: all .4s;
+}
+.list-li:hover{
+    border-top: 2px solid var(--color-white);
+}
+
+/* MAIN */
+main{
+    height: auto;
+    width: 100%;
+}
+.coffee-white-01{
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+.coffee-green-01{
+    background-color: var(--color-green);
+    color: var(--color-white);
+}
+.row{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.margin{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img{
+    width: 50%;
+    height: 400px;
+}
+.img-white{
+    display: flex;
+    justify-content: start;
+}
+.img > img{
+    height: 100%;
+    
+}
+.hiding{
+    display: none;
+}
+.background-properties{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.background-1{
+    background-image: url(/img/taza_cafe_negro_desde_arriba_600x800.avif);
+}
+.background-2{
+    background-image: url(/img/natural_600x750.avif);
+}
+.background-3{
+    background-image: url(/img/grupo-amigos-bebiendo-cafe.avif);
+}
+
+#video{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    z-index: -100;
+}
+
+.text{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.right{
+    padding-left: 20px;
+}
+.left{
+    padding-right: 20px;
+}
+
+/* REVIEW */
+.review{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+.margin-review{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.text-review{
+    width: 30%;
+}
+.text-review > p {
+    font-style: italic;
+}
+.review-text{
+    text-transform: uppercase;
+    font-style: italic;
+}
+.author{
+    display: flex;
+    justify-content: end;
+    color: var(--color-red);
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+/* FOOTER */
+.footer{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    background-color: var(--color-green);
+    color: var(--color-white);
+    font-size: 12px;
+    font-weight: 200;
+}
+.contact-footer{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    padding-top: 20px;
+}
+.contact{
+    width: 40%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.contact > h4, p{
+    padding-bottom: 10px;
+}
+.social > img{
+    width: 25px;
+}
+.social > img:not(:first-child){
+    margin-left: 20px;
+}
+.container-list{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.list-footer ul > li{
+    list-style: none;
+    line-height: 20px;
+    font-size: 12px;
+    border-bottom: 2px solid transparent; 
+}
+.list-footer ul > li:hover:not(:first-child){
+    border-bottom: 2px solid var(--color-white);
+    cursor: pointer;
+
+}
+.list-footer ul > li:first-child{
+    font-weight: 600;
+    padding-bottom: 5px;
+}
