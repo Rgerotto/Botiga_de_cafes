@@ -11,7 +11,7 @@ Botiga -> botiga.html
 Sobre Nosaltres -> nosaltres.html
 
 La foto de la cabecera se llama como la página y debe estar en formato avif, en tamaños 2000px, 1440px, 800px y 500px, para que se cargue la adecuada dentro de una etiqueta <picture>. Atención que algunas están ahora en formato png.
-
+El video hay que reproducirlo de forma automática y contínua.
 
 
 Criterio de valoración:
