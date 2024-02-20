@@ -6,14 +6,14 @@
     box-sizing: border-box;
 }
 :root{
-    --color-green: #053617;
+    --color-green: rgb(5, 54, 23);
     --color-red: rgb(255, 11, 7);
     --color-white: rgb(255, 255, 255);
     --color-black: rgb(0,0,0);
 
-    --color-active: #0536175e;
+    --color-active: rgba(5, 54, 23, 0.369);
 }
-.text-h2, .text-h1{
+.text-h1{
     font-family: "Dancing Script", cursive;
     font-size: 35px;
     font-weight: 200;
@@ -79,119 +79,76 @@ nav{
     width: 100%;
     border-bottom: 2px solid var(--color-white);
 }
-
-/* MAIN */
-main{
-    height: auto;
+.container{
     width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
 }
-.coffee-white-01{
-    background-color: var(--color-white);
+.container-about{
+    width: 40%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/img/background_coffee_new.avif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.container-about > p{
+    text-align: center;
+    width: 90%;
+    font-size: 15px;
+    font-weight: 600;
     color: var(--color-black);
 }
-.coffee-green-01{
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+form > input{
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: .5rem 1.2rem;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid var(--color-red);
+}
+input::placeholder{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+.btn{
+    padding: .5rem 1.5rem;
+    margin: 30px 0;
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    border: none;
     background-color: var(--color-green);
     color: var(--color-white);
+    cursor: pointer;
+    transition: all .9s;
 }
-.row{
-    height: auto;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.margin{
-    height: 100%;
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.img{
-    width: 50%;
-    height: 400px;
-}
-.img-white{
-    display: flex;
-    justify-content: start;
-}
-.img > img{
-    height: 100%;
-    
-}
-.hiding{
-    display: none;
-}
-.background-properties{
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.background-1{
-    background-image: url(/img/taza_cafe_negro_desde_arriba_600x800.avif);
-}
-.background-2{
-    background-image: url(/img/natural_600x750.avif);
-}
-.background-3{
-    background-image: url(/img/grupo-amigos-bebiendo-cafe.avif);
-}
-
-#video{
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    z-index: -100;
-}
-
-.text{
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.right{
-    padding-left: 20px;
-}
-.left{
-    padding-right: 20px;
-}
-
-/* REVIEW */
-.review{
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    padding-bottom: 20px;
-    margin-top: 20px;
+.btn:hover{
+    color: var(--color-green);
     background-color: var(--color-white);
-    color: var(--color-black);
+    transform: scale(1.1);
 }
-.margin-review{
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    margin-top: 20px;
+.btn:active{
+    transform: scale(.8);
 }
-.text-review{
-    width: 30%;
-}
-.text-review > p {
-    font-style: italic;
-}
-.review-text{
-    text-transform: uppercase;
-    font-style: italic;
-}
-.author{
-    display: flex;
-    justify-content: end;
-    color: var(--color-red);
-    font-size: 12px;
-    margin-top: 10px;
-}
+
+
+
+
 
 /* FOOTER */
 .footer{
@@ -247,4 +204,3 @@ main{
     font-weight: 600;
     padding-bottom: 5px;
 }
-

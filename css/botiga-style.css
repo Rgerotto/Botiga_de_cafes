@@ -6,14 +6,14 @@
     box-sizing: border-box;
 }
 :root{
-    --color-green: #053617;
+    --color-green: rgb(5, 54, 23);
     --color-red: rgb(255, 11, 7);
     --color-white: rgb(255, 255, 255);
     --color-black: rgb(0,0,0);
 
-    --color-active: #0536175e;
+    --color-active: rgba(5, 54, 23, 0.369);
 }
-.text-h2, .text-h1{
+.text-h1{
     font-family: "Dancing Script", cursive;
     font-size: 35px;
     font-weight: 200;
@@ -80,117 +80,86 @@ nav{
     border-bottom: 2px solid var(--color-white);
 }
 
-/* MAIN */
-main{
-    height: auto;
-    width: 100%;
-}
-.coffee-white-01{
-    background-color: var(--color-white);
-    color: var(--color-black);
-}
-.coffee-green-01{
-    background-color: var(--color-green);
-    color: var(--color-white);
-}
-.row{
-    height: auto;
+
+.container{
     width: 100%;
     display: flex;
     justify-content: center;
+    background-image: linear-gradient(to right bottom, rgba(5, 54, 23, 0.646), rgba(255, 255, 255, 0.361)), url(/img/ideadad-SoMHwovUDqA-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+}
+.container-margin{
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    justify-content: space-around;
+/*     background-color: #ffffff23; */
+    padding-top: 40px;
+}
+.card{
+    height: 400px;
+    max-width: 300px;
+    margin-bottom: 40px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(250, 235, 215, 0.782);
+    border: 9px solid var(--color-active);
+    border-radius: 10px;
+}
+.text{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
-.margin{
-    height: 100%;
-    width: 50%;
+h3{
+    font-family: "Dancing Script", cursive;
+    font-size: 30px;
+    font-weight: 600;
+}
+p{
+    font-weight: 200;
+    width: 80%;
+    font-size: 12px;
+}
+.img-container{
     display: flex;
-    align-items: center;
     justify-content: center;
+    padding-top: 15px;
 }
 .img{
-    width: 50%;
-    height: 400px;
-}
-.img-white{
-    display: flex;
-    justify-content: start;
-}
-.img > img{
-    height: 100%;
-    
-}
-.hiding{
-    display: none;
-}
-.background-properties{
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.background-1{
-    background-image: url(/img/taza_cafe_negro_desde_arriba_600x800.avif);
-}
-.background-2{
-    background-image: url(/img/natural_600x750.avif);
-}
-.background-3{
-    background-image: url(/img/grupo-amigos-bebiendo-cafe.avif);
+    height: 150px;
 }
 
-#video{
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    z-index: -100;
+.btn{
+    padding: .5rem 1.5rem;
+    margin: 10px 0;
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--color-green);
+    color: var(--color-white);
+    cursor: pointer;
+    transition: all .9s;
 }
-
-.text{
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.right{
-    padding-left: 20px;
-}
-.left{
-    padding-right: 20px;
-}
-
-/* REVIEW */
-.review{
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    padding-bottom: 20px;
-    margin-top: 20px;
+.btn:hover{
+    color: var(--color-green);
     background-color: var(--color-white);
-    color: var(--color-black);
+    transform: scale(1.1);
 }
-.margin-review{
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-.text-review{
-    width: 30%;
-}
-.text-review > p {
-    font-style: italic;
-}
-.review-text{
-    text-transform: uppercase;
-    font-style: italic;
-}
-.author{
-    display: flex;
-    justify-content: end;
-    color: var(--color-red);
-    font-size: 12px;
-    margin-top: 10px;
+.btn:active{
+    transform: scale(.8);
 }
 
 /* FOOTER */
@@ -247,4 +216,3 @@ main{
     font-weight: 600;
     padding-bottom: 5px;
 }
-
