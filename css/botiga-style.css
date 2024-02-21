@@ -13,11 +13,7 @@
 
     --color-active: rgba(5, 54, 23, 0.369);
 }
-.text-h1{
-    font-family: "Dancing Script", cursive;
-    font-size: 35px;
-    font-weight: 200;
-}
+
 body{
     width: 100vw;
     height: 100vh;
@@ -27,12 +23,15 @@ body{
 .header{
 }
 .text-h1{
+    font-family: "Dancing Script", cursive;
+    font-size: 35px;
+    font-weight: 200;
     position: absolute;
     top: 0;
     right: 0;
     font-size: 8vw;
-    padding-top: 50px;
-    padding-right: 30px;
+    padding-top: 100px;
+    padding-right: 80px;
     color: var(--color-white);
     text-shadow: .1rem .5rem .9rem black;
     transform: rotate(-15deg);
@@ -51,6 +50,8 @@ nav{
     justify-content: center;
     align-items: center;
     background-color: var(--color-green);
+    position: sticky;
+    top: 0;
 }
 .list{
     width: 70%;
@@ -215,4 +216,55 @@ p{
 .list-footer ul > li:first-child{
     font-weight: 600;
     padding-bottom: 5px;
+}
+
+@media only screen and (max-width:1000px){
+    .text-h1{
+        padding-top: 80px;
+        padding-right: 42px;
+    }
+}
+
+@media only screen and (max-width:800px){
+    .text-h1{
+        padding-top: 80px;
+        padding-right: 32px;
+    }
+    .list{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+
+    .footer{
+        height: auto;
+    }
+    .contact-footer{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .container-list{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+}
+
+@media only screen and (max-width:600px){
+    .text-h1{
+        padding-top: 50px;
+        padding-right: 22px;
+    }
 }

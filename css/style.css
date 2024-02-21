@@ -31,14 +31,13 @@ body{
     top: 0;
     right: 0;
     font-size: 8vw;
-    padding-top: 50px;
-    padding-right: 30px;
+    padding-top: 100px;
+    padding-right: 80px;
     color: var(--color-white);
-    text-shadow: .1rem .5rem .9rem black;
+    text-shadow: 0 .2rem .2rem var(--color-green);
     transform: rotate(-15deg);
 }
 .header-img{
-
     width: 100%;
 }
 
@@ -51,6 +50,8 @@ nav{
     justify-content: center;
     align-items: center;
     background-color: var(--color-green);
+    position: sticky;
+    top: 0;
 }
 .list{
     width: 70%;
@@ -97,6 +98,7 @@ main{
     height: auto;
     width: 100%;
     display: flex;
+
     justify-content: center;
     align-items: center;
 }
@@ -119,9 +121,9 @@ main{
     height: 100%;
     
 }
-.hiding{
+/* .hiding{
     display: none;
-}
+} */
 .background-properties{
     background-size: cover;
     background-repeat: no-repeat;
@@ -221,10 +223,10 @@ main{
 .contact > h4, p{
     padding-bottom: 10px;
 }
-.social > img{
+.img-social{
     width: 25px;
 }
-.social > img:not(:first-child){
+.link-social:not(:first-child){
     margin-left: 20px;
 }
 .container-list{
@@ -247,4 +249,80 @@ main{
     font-weight: 600;
     padding-bottom: 5px;
 }
+@media only screen and (max-width:1000px){
+    .text-h1{
+        padding-top: 80px;
+        padding-right: 42px;
+    }
+}
+
+@media only screen and (max-width:800px){
+    .text-h1{
+        padding-top: 80px;
+        padding-right: 32px;
+    }
+    .list{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .margin{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .img{
+        width: 100%;
+    }
+    .text{
+        width: 100%;
+        height: 100%;
+    }
+    .left{
+        padding-left: 20px;
+    }
+    .margin-review{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .text-review{
+        width: 90%;
+    }
+
+    .footer{
+        height: auto;
+    }
+    .contact-footer{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .container-list{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+}
+@media only screen and (max-width:600px){
+    .text-h1{
+        padding-top: 50px;
+        padding-right: 22px;
+    }
+}
+
+
+
 
