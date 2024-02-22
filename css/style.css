@@ -223,8 +223,11 @@ main{
 .contact > h4, p{
     padding-bottom: 10px;
 }
-.img-social{
+.social > img{
     width: 25px;
+}
+.social > img:not(:first-child){
+    margin-left: 20px;
 }
 .link-social:not(:first-child){
     margin-left: 20px;
